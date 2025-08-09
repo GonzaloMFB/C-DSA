@@ -149,48 +149,50 @@ void remove_at_index(int index, Node** head) {
 }
 
 void insert_at_index(int index, int val, Node** head) {
-    if (*head == NULL) {
-        fprintf(stderr, "You must pass a valid pointer to a Node\n");
+    if (head == NULL) {
+        fprintf(stderr, "You must pass a valid pointer to a Node*\n");
         return;
     }
+    
     int len = length(*head);
-    if (index < 0 || index >= len) {
+    
+    // Allow insertion at index == len (append to end)
+    if (index < 0 || index > len) {
         fprintf(stderr, "Index out of bounds.");
-        if (length(*head) == index) {
-            printf("Use append to insert at end of Linked List.");
-        }
         return;
     }
-    // Traverse until given index, then add node
-    // Modify next and prev pointer of the adjacent nodes
-    Node* current = *head;
+
     Node* new_node = create_node(val);
-    if (index == 0) {
-        new_node->next = current;
-        if (current != NULL) {
-            // This would happen on empty linked list.
-            current->prev = new_node;
+    
+    // Handle empty list or insert at beginning
+    if (*head == NULL || index == 0) {
+        new_node->next = *head;
+        if (*head != NULL) {
+            (*head)->prev = new_node;
         }
         *head = new_node;
         return;
     }
-    int i = 1;
-    while (current != NULL) {
-        if (i == index) {
-            // Insert node
-            Node* prev = current->prev;
-            Node* next = current->next;
-            new_node->prev = prev;
-            new_node->next = next;
-            if (prev != NULL) {
-                prev->next = new_node;
-            }
-            if (next != NULL) {
-                next->prev = new_node;
-            }
-            return;
-        }
-        i++;
+    
+    // Handle insertion at end (only for non-empty lists)
+    if (index == len) {
+        append(val, *head); // append creates new node.
+        free(new_node); // Free the node we created since append creates its own
+        return;
+    }
+    
+    // Traverse to the correct position
+    Node* current = *head;
+    for (int i = 0; i < index; i++) {
         current = current->next;
+    }
+    
+    Node* prev_node = current->prev;
+    new_node->next = current;
+    new_node->prev = prev_node;
+    current->prev = new_node;
+    
+    if (prev_node != NULL) {
+        prev_node->next = new_node;
     }
 }

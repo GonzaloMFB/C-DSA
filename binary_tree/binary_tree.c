@@ -269,7 +269,7 @@ Node* bst_find_min(Node* root) {
     if (root->left == NULL) {
         return root;
     }
-    return find_min(root->left);
+    return bst_find_min(root->left);
 }
 
 Node* bst_find_max(Node* root) {
@@ -279,7 +279,7 @@ Node* bst_find_max(Node* root) {
     if (root->right == NULL) {
         return root;
     }
-    return find_max(root->right);
+    return bst_find_max(root->right);
 }
 
 Node* bst_delete_by_value(int val, Node* node) {
