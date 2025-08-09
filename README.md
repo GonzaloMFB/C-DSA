@@ -105,7 +105,3 @@ This project is for educational purposes. Use freely for learning and reference.
 - Learn algorithm design and analysis
 - Practice C programming and memory management
 - Develop problem-solving skills
-
----
-
-**Happy Coding!**
