@@ -76,8 +76,7 @@ int main() {
 
 ## Learning Resources
 
-Check the [`docs/`](docs/) directory for additional learning materials:
-- **TUTOR.md** - Tutoring notes and explanations
+Check the [`notes/`](notes/) directory for additional learning materials:
 - **notes.md** - General notes and observations
 
 ## Testing
