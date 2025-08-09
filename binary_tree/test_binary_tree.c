@@ -458,10 +458,10 @@ int main() {
     printf("Test Summary: %d/%d tests passed\n", tests_passed, tests_run);
     
     if (tests_passed == tests_run) {
-        printf("🎉 All tests passed!\n");
+        printf("SUCCESS - All tests passed!\n");
         return 0;
     } else {
-        printf("❌ %d tests failed\n", tests_run - tests_passed);
+        printf("FAILED - %d tests failed\n", tests_run - tests_passed);
         return 1;
     }
 }

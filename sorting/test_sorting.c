@@ -33,7 +33,7 @@ void test_bubble_sort_basic() {
     print_array(array, count);
     
     assert(arrays_equal(array, expected, count));
-    printf("✓ test_bubble_sort_basic passed\n");
+    printf("SUCCESS - test_bubble_sort_basic passed\n");
 }
 
 void test_bubble_sort_already_sorted() {
@@ -43,7 +43,7 @@ void test_bubble_sort_already_sorted() {
     
     bubble_sort(array, count);
     assert(arrays_equal(array, expected, count));
-    printf("✓ test_bubble_sort_already_sorted passed\n");
+    printf("SUCCESS - test_bubble_sort_already_sorted passed\n");
 }
 
 void test_bubble_sort_reverse_sorted() {
@@ -53,7 +53,7 @@ void test_bubble_sort_reverse_sorted() {
     
     bubble_sort(array, count);
     assert(arrays_equal(array, expected, count));
-    printf("✓ test_bubble_sort_reverse_sorted passed\n");
+    printf("SUCCESS - test_bubble_sort_reverse_sorted passed\n");
 }
 
 void test_bubble_sort_duplicates() {
@@ -63,7 +63,7 @@ void test_bubble_sort_duplicates() {
     
     bubble_sort(array, count);
     assert(arrays_equal(array, expected, count));
-    printf("✓ test_bubble_sort_duplicates passed\n");
+    printf("SUCCESS - test_bubble_sort_duplicates passed\n");
 }
 
 void test_bubble_sort_single_element() {
@@ -73,7 +73,7 @@ void test_bubble_sort_single_element() {
     
     bubble_sort(array, count);
     assert(arrays_equal(array, expected, count));
-    printf("✓ test_bubble_sort_single_element passed\n");
+    printf("SUCCESS - test_bubble_sort_single_element passed\n");
 }
 
 void test_bubble_sort_two_elements() {
@@ -83,7 +83,7 @@ void test_bubble_sort_two_elements() {
     
     bubble_sort(array, count);
     assert(arrays_equal(array, expected, count));
-    printf("✓ test_bubble_sort_two_elements passed\n");
+    printf("SUCCESS - test_bubble_sort_two_elements passed\n");
 }
 
 void test_bubble_sort_negative_numbers() {
@@ -93,7 +93,7 @@ void test_bubble_sort_negative_numbers() {
     
     bubble_sort(array, count);
     assert(arrays_equal(array, expected, count));
-    printf("✓ test_bubble_sort_negative_numbers passed\n");
+    printf("SUCCESS - test_bubble_sort_negative_numbers passed\n");
 }
 
 // Selection sort tests
@@ -104,7 +104,7 @@ void test_selection_sort_basic() {
     
     selection_sort(array, count);
     assert(arrays_equal(array, expected, count));
-    printf("✓ test_selection_sort_basic passed\n");
+    printf("SUCCESS - test_selection_sort_basic passed\n");
 }
 
 void test_selection_sort_already_sorted() {
@@ -114,7 +114,7 @@ void test_selection_sort_already_sorted() {
     
     selection_sort(array, count);
     assert(arrays_equal(array, expected, count));
-    printf("✓ test_selection_sort_already_sorted passed\n");
+    printf("SUCCESS - test_selection_sort_already_sorted passed\n");
 }
 
 void test_selection_sort_reverse_sorted() {
@@ -124,7 +124,7 @@ void test_selection_sort_reverse_sorted() {
     
     selection_sort(array, count);
     assert(arrays_equal(array, expected, count));
-    printf("✓ test_selection_sort_reverse_sorted passed\n");
+    printf("SUCCESS - test_selection_sort_reverse_sorted passed\n");
 }
 
 // Insertion sort tests
@@ -135,7 +135,7 @@ void test_insertion_sort_basic() {
     
     insertion_sort(array, count);
     assert(arrays_equal(array, expected, count));
-    printf("✓ test_insertion_sort_basic passed\n");
+    printf("SUCCESS - test_insertion_sort_basic passed\n");
 }
 
 void test_insertion_sort_already_sorted() {
@@ -145,7 +145,7 @@ void test_insertion_sort_already_sorted() {
     
     insertion_sort(array, count);
     assert(arrays_equal(array, expected, count));
-    printf("✓ test_insertion_sort_already_sorted passed\n");
+    printf("SUCCESS - test_insertion_sort_already_sorted passed\n");
 }
 
 void test_insertion_sort_reverse_sorted() {
@@ -155,7 +155,7 @@ void test_insertion_sort_reverse_sorted() {
     
     insertion_sort(array, count);
     assert(arrays_equal(array, expected, count));
-    printf("✓ test_insertion_sort_reverse_sorted passed\n");
+    printf("SUCCESS - test_insertion_sort_reverse_sorted passed\n");
 }
 
 // Quick sort tests
@@ -166,7 +166,7 @@ void test_quick_sort_basic() {
     
     quick_sort(array, count);
     assert(arrays_equal(array, expected, count));
-    printf("✓ test_quick_sort_basic passed\n");
+    printf("SUCCESS - test_quick_sort_basic passed\n");
 }
 
 void test_quick_sort_already_sorted() {
@@ -176,7 +176,7 @@ void test_quick_sort_already_sorted() {
     
     quick_sort(array, count);
     assert(arrays_equal(array, expected, count));
-    printf("✓ test_quick_sort_already_sorted passed\n");
+    printf("SUCCESS - test_quick_sort_already_sorted passed\n");
 }
 
 void test_quick_sort_reverse_sorted() {
@@ -186,7 +186,7 @@ void test_quick_sort_reverse_sorted() {
     
     quick_sort(array, count);
     assert(arrays_equal(array, expected, count));
-    printf("✓ test_quick_sort_reverse_sorted passed\n");
+    printf("SUCCESS - test_quick_sort_reverse_sorted passed\n");
 }
 
 void test_quick_sort_single_element() {
@@ -196,7 +196,7 @@ void test_quick_sort_single_element() {
     
     quick_sort(array, count);
     assert(arrays_equal(array, expected, count));
-    printf("✓ test_quick_sort_single_element passed\n");
+    printf("SUCCESS - test_quick_sort_single_element passed\n");
 }
 
 void test_quick_sort_duplicates() {
@@ -206,7 +206,7 @@ void test_quick_sort_duplicates() {
     
     quick_sort(array, count);
     assert(arrays_equal(array, expected, count));
-    printf("✓ test_quick_sort_duplicates passed\n");
+    printf("SUCCESS - test_quick_sort_duplicates passed\n");
 }
 
 void test_quick_sort_two_elements() {
@@ -216,7 +216,7 @@ void test_quick_sort_two_elements() {
     
     quick_sort(array, count);
     assert(arrays_equal(array, expected, count));
-    printf("✓ test_quick_sort_two_elements passed\n");
+    printf("SUCCESS - test_quick_sort_two_elements passed\n");
 }
 
 void test_quick_sort_negative_numbers() {
@@ -226,7 +226,7 @@ void test_quick_sort_negative_numbers() {
     
     quick_sort(array, count);
     assert(arrays_equal(array, expected, count));
-    printf("✓ test_quick_sort_negative_numbers passed\n");
+    printf("SUCCESS - test_quick_sort_negative_numbers passed\n");
 }
 
 // Merge sort tests
@@ -237,7 +237,7 @@ void test_merge_sort_basic() {
     
     merge_sort(array, count);
     assert(arrays_equal(array, expected, count));
-    printf("✓ test_merge_sort_basic passed\n");
+    printf("SUCCESS - test_merge_sort_basic passed\n");
 }
 
 void test_merge_sort_already_sorted() {
@@ -247,7 +247,7 @@ void test_merge_sort_already_sorted() {
     
     merge_sort(array, count);
     assert(arrays_equal(array, expected, count));
-    printf("✓ test_merge_sort_already_sorted passed\n");
+    printf("SUCCESS - test_merge_sort_already_sorted passed\n");
 }
 
 void test_merge_sort_reverse_sorted() {
@@ -257,7 +257,7 @@ void test_merge_sort_reverse_sorted() {
     
     merge_sort(array, count);
     assert(arrays_equal(array, expected, count));
-    printf("✓ test_merge_sort_reverse_sorted passed\n");
+    printf("SUCCESS - test_merge_sort_reverse_sorted passed\n");
 }
 
 void test_merge_sort_single_element() {
@@ -267,7 +267,7 @@ void test_merge_sort_single_element() {
     
     merge_sort(array, count);
     assert(arrays_equal(array, expected, count));
-    printf("✓ test_merge_sort_single_element passed\n");
+    printf("SUCCESS - test_merge_sort_single_element passed\n");
 }
 
 void test_merge_sort_duplicates() {
@@ -277,7 +277,7 @@ void test_merge_sort_duplicates() {
     
     merge_sort(array, count);
     assert(arrays_equal(array, expected, count));
-    printf("✓ test_merge_sort_duplicates passed\n");
+    printf("SUCCESS - test_merge_sort_duplicates passed\n");
 }
 
 int main() {
@@ -318,6 +318,6 @@ int main() {
     test_merge_sort_single_element();
     test_merge_sort_duplicates();
     
-    printf("\n✓ All sorting tests passed!\n");
+    printf("\nSUCCESS - All sorting tests passed!\n");
     return 0;
 }

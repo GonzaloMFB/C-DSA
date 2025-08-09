@@ -14,9 +14,9 @@ int tests_passed = 0;
         tests_run++; \
         if (condition) { \
             tests_passed++; \
-            printf("✓ PASSED - %s\n", message); \
+            printf("SUCCESS - %s\n", message); \
         } else { \
-            printf("✗ FAILED - %s\n", message); \
+            printf("FAILED - %s\n", message); \
         } \
     } while(0)
 
@@ -312,9 +312,9 @@ void print_test_summary() {
     printf("Success rate: %.1f%%\n", (float)tests_passed / tests_run * 100);
     
     if (tests_passed == tests_run) {
-        printf("\n🎉 ALL TESTS PASSED! Your heap implementation is solid!\n");
+        printf("\nSUCCESS - ALL TESTS PASSED! Your heap implementation is solid!\n");
     } else {
-        printf("\n❌ Some tests failed. Check the output above for details.\n");
+        printf("\nFAILED - Some tests failed. Check the output above for details.\n");
     }
 }
 

@@ -17,7 +17,7 @@ void test_create_node() {
     
     free(node->children);
     free(node);
-    printf("✓ create_node tests passed\n");
+    printf("SUCCESS - create_node tests passed\n");
 }
 
 void test_basic_operations() {
@@ -35,7 +35,7 @@ void test_basic_operations() {
     
     free(node->children);
     free(node);
-    printf("✓ basic operations tests passed\n");
+    printf("SUCCESS - basic operations tests passed\n");
 }
 
 void test_insert_and_search_single_word() {
@@ -50,7 +50,7 @@ void test_insert_and_search_single_word() {
     assert(search("dog", root) == 0);
     
     delete_trie(root);
-    printf("✓ single word insert/search tests passed\n");
+    printf("SUCCESS - single word insert/search tests passed\n");
 }
 
 void test_insert_and_search_multiple_words() {
@@ -72,7 +72,7 @@ void test_insert_and_search_multiple_words() {
     assert(search("dog", root) == 0);
     
     delete_trie(root);
-    printf("✓ multiple words insert/search tests passed\n");
+    printf("SUCCESS - multiple words insert/search tests passed\n");
 }
 
 void test_prefix_words() {
@@ -91,7 +91,7 @@ void test_prefix_words() {
     assert(search("cate", root) == 0);
     
     delete_trie(root);
-    printf("✓ prefix words tests passed\n");
+    printf("SUCCESS - prefix words tests passed\n");
 }
 
 void test_empty_string() {
@@ -106,7 +106,7 @@ void test_empty_string() {
     assert(search("", root) == 1);
     
     delete_trie(root);
-    printf("✓ empty string tests passed\n");
+    printf("SUCCESS - empty string tests passed\n");
 }
 
 void test_single_character_words() {
@@ -123,7 +123,7 @@ void test_single_character_words() {
     assert(search("b", root) == 0);
     
     delete_trie(root);
-    printf("✓ single character tests passed\n");
+    printf("SUCCESS - single character tests passed\n");
 }
 
 void test_duplicate_insertions() {
@@ -137,7 +137,7 @@ void test_duplicate_insertions() {
     assert(search("hello", root) == 1);
     
     delete_trie(root);
-    printf("✓ duplicate insertion tests passed\n");
+    printf("SUCCESS - duplicate insertion tests passed\n");
 }
 
 void test_resize_functionality() {
@@ -156,7 +156,7 @@ void test_resize_functionality() {
     }
     
     delete_trie(root);
-    printf("✓ resize functionality tests passed\n");
+    printf("SUCCESS - resize functionality tests passed\n");
 }
 
 void test_delete_single_word() {
@@ -170,7 +170,7 @@ void test_delete_single_word() {
     assert(search("cat", root) == 0);
     
     delete_trie(root);
-    printf("✓ delete single word tests passed\n");
+    printf("SUCCESS - delete single word tests passed\n");
 }
 
 void test_delete_with_shared_prefix() {
@@ -191,7 +191,7 @@ void test_delete_with_shared_prefix() {
     assert(search("care", root) == 1);
     
     delete_trie(root);
-    printf("✓ delete with shared prefix tests passed\n");
+    printf("SUCCESS - delete with shared prefix tests passed\n");
 }
 
 void test_delete_prefix_word() {
@@ -206,7 +206,7 @@ void test_delete_prefix_word() {
     assert(search("cats", root) == 1);
     
     delete_trie(root);
-    printf("✓ delete prefix word tests passed\n");
+    printf("SUCCESS - delete prefix word tests passed\n");
 }
 
 void test_delete_longer_word() {
@@ -221,7 +221,7 @@ void test_delete_longer_word() {
     assert(search("cat", root) == 1);
     
     delete_trie(root);
-    printf("✓ delete longer word tests passed\n");
+    printf("SUCCESS - delete longer word tests passed\n");
 }
 
 void test_delete_nonexistent_word() {
@@ -233,7 +233,7 @@ void test_delete_nonexistent_word() {
     assert(search("cat", root) == 1);
     
     delete_trie(root);
-    printf("✓ delete non-existent word tests passed\n");
+    printf("SUCCESS - delete non-existent word tests passed\n");
 }
 
 void test_delete_cascading_cleanup() {
@@ -248,7 +248,7 @@ void test_delete_cascading_cleanup() {
     assert(search("hello", root) == 1);
     
     delete_trie(root);
-    printf("✓ cascading cleanup tests passed\n");
+    printf("SUCCESS - cascading cleanup tests passed\n");
 }
 
 void test_delete_multiple_operations() {
@@ -272,7 +272,7 @@ void test_delete_multiple_operations() {
     assert(search("apply", root) == 1);
     
     delete_trie(root);
-    printf("✓ multiple delete operations tests passed\n");
+    printf("SUCCESS - multiple delete operations tests passed\n");
 }
 
 int main() {
@@ -296,6 +296,6 @@ int main() {
     test_delete_cascading_cleanup();
     test_delete_multiple_operations();
     
-    printf("\n✅ All tests passed!\n");
+    printf("\nSUCCESS - All tests passed!\n");
     return 0;
 }

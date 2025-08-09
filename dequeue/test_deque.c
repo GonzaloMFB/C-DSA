@@ -11,7 +11,7 @@ void test_create_deque() {
     assert(deque->back_idx == 5);
     assert(deque->array != NULL);
     destroy(deque);
-    printf("✓ test_create_deque passed\n");
+    printf("SUCCESS - test_create_deque passed\n");
 }
 
 void test_push_front_single() {
@@ -21,7 +21,7 @@ void test_push_front_single() {
     assert(deque->front_idx == 4);
     assert(deque->back_idx == 5);
     destroy(deque);
-    printf("✓ test_push_front_single passed\n");
+    printf("SUCCESS - test_push_front_single passed\n");
 }
 
 void test_push_back_single() {
@@ -31,7 +31,7 @@ void test_push_back_single() {
     assert(deque->front_idx == 5);
     assert(deque->back_idx == 6);
     destroy(deque);
-    printf("✓ test_push_back_single passed\n");
+    printf("SUCCESS - test_push_back_single passed\n");
 }
 
 void test_push_front_multiple() {
@@ -43,7 +43,7 @@ void test_push_front_multiple() {
     assert(deque->front_idx == 2);
     assert(deque->back_idx == 5);
     destroy(deque);
-    printf("✓ test_push_front_multiple passed\n");
+    printf("SUCCESS - test_push_front_multiple passed\n");
 }
 
 void test_push_back_multiple() {
@@ -55,7 +55,7 @@ void test_push_back_multiple() {
     assert(deque->front_idx == 5);
     assert(deque->back_idx == 8);
     destroy(deque);
-    printf("✓ test_push_back_multiple passed\n");
+    printf("SUCCESS - test_push_back_multiple passed\n");
 }
 
 void test_mixed_push_operations() {
@@ -69,7 +69,7 @@ void test_mixed_push_operations() {
     assert(deque->front_idx == 3);
     assert(deque->back_idx == 7);
     destroy(deque);
-    printf("✓ test_mixed_push_operations passed\n");
+    printf("SUCCESS - test_mixed_push_operations passed\n");
 }
 
 void test_pop_front() {
@@ -84,7 +84,7 @@ void test_pop_front() {
     assert(deque->back_idx == 8);
     
     destroy(deque);
-    printf("✓ test_pop_front passed\n");
+    printf("SUCCESS - test_pop_front passed\n");
 }
 
 void test_pop_back() {
@@ -99,7 +99,7 @@ void test_pop_back() {
     assert(deque->back_idx == 7);
     
     destroy(deque);
-    printf("✓ test_pop_back passed\n");
+    printf("SUCCESS - test_pop_back passed\n");
 }
 
 void test_pop_empty() {
@@ -108,7 +108,7 @@ void test_pop_empty() {
     pop_back(deque);
     assert(deque->count == 0);
     destroy(deque);
-    printf("✓ test_pop_empty passed\n");
+    printf("SUCCESS - test_pop_empty passed\n");
 }
 
 void test_resize_front_buffer() {
@@ -122,7 +122,7 @@ void test_resize_front_buffer() {
     assert(deque->max_length > old_max);
     
     destroy(deque);
-    printf("✓ test_resize_front_buffer passed\n");
+    printf("SUCCESS - test_resize_front_buffer passed\n");
 }
 
 void test_resize_back_buffer() {
@@ -136,7 +136,7 @@ void test_resize_back_buffer() {
     assert(deque->max_length > old_max);
     
     destroy(deque);
-    printf("✓ test_resize_back_buffer passed\n");
+    printf("SUCCESS - test_resize_back_buffer passed\n");
 }
 
 void test_full_cycle() {
@@ -158,7 +158,7 @@ void test_full_cycle() {
     assert(deque->count == 4);
     
     destroy(deque);
-    printf("✓ test_full_cycle passed\n");
+    printf("SUCCESS - test_full_cycle passed\n");
 }
 
 int main() {
@@ -177,6 +177,6 @@ int main() {
     test_resize_back_buffer();
     test_full_cycle();
     
-    printf("\n✓ All deque tests passed!\n");
+    printf("\nSUCCESS - All deque tests passed!\n");
     return 0;
 }

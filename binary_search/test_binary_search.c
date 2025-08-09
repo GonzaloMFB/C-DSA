@@ -7,7 +7,7 @@ void test_single_element() {
     int arr[] = {5};
     assert(binary_search(5, arr, 1) == 0);
     assert(binary_search(3, arr, 1) == -1);
-    printf("✓ Single element tests passed\n");
+    printf("SUCCESS - Single element tests passed\n");
 }
 
 void test_small_array() {
@@ -27,7 +27,7 @@ void test_small_array() {
     assert(binary_search(6, arr, 4) == -1);
     assert(binary_search(8, arr, 4) == -1);
     
-    printf("✓ Small array tests passed\n");
+    printf("SUCCESS - Small array tests passed\n");
 }
 
 void test_edge_cases() {
@@ -45,7 +45,7 @@ void test_edge_cases() {
     // Test NULL array
     assert(binary_search(1, NULL, 5) == -1);
     
-    printf("✓ Edge case tests passed\n");
+    printf("SUCCESS - Edge case tests passed\n");
 }
 
 void test_larger_array() {
@@ -59,7 +59,7 @@ void test_larger_array() {
     assert(binary_search(21, arr, 10) == -1);
     assert(binary_search(15, arr, 10) == -1);
     
-    printf("✓ Larger array tests passed\n");
+    printf("SUCCESS - Larger array tests passed\n");
 }
 
 void test_recursive_single_element() {
@@ -67,7 +67,7 @@ void test_recursive_single_element() {
     int arr[] = {5};
     assert(recursive_bin_search(5, arr, 0, 0) == 0);
     assert(recursive_bin_search(3, arr, 0, 0) == -1);
-    printf("✓ Recursive single element tests passed\n");
+    printf("SUCCESS - Recursive single element tests passed\n");
 }
 
 void test_recursive_small_array() {
@@ -87,7 +87,7 @@ void test_recursive_small_array() {
     assert(recursive_bin_search(6, arr, 0, 3) == -1);
     assert(recursive_bin_search(8, arr, 0, 3) == -1);
     
-    printf("✓ Recursive small array tests passed\n");
+    printf("SUCCESS - Recursive small array tests passed\n");
 }
 
 void test_recursive_edge_cases() {
@@ -108,7 +108,7 @@ void test_recursive_edge_cases() {
     assert(recursive_bin_search(1, arr, -1, 4) == -1);
     assert(recursive_bin_search(1, arr, 0, -1) == -1);
     
-    printf("✓ Recursive edge case tests passed\n");
+    printf("SUCCESS - Recursive edge case tests passed\n");
 }
 
 void test_recursive_larger_array() {
@@ -122,7 +122,7 @@ void test_recursive_larger_array() {
     assert(recursive_bin_search(21, arr, 0, 9) == -1);
     assert(recursive_bin_search(15, arr, 0, 9) == -1);
     
-    printf("✓ Recursive larger array tests passed\n");
+    printf("SUCCESS - Recursive larger array tests passed\n");
 }
 
 int main() {
@@ -140,6 +140,6 @@ int main() {
     test_recursive_edge_cases();
     test_recursive_larger_array();
     
-    printf("\n🎉 All tests passed!\n");
+    printf("\nSUCCESS - All tests passed!\n");
     return 0;
 }

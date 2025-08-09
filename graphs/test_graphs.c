@@ -15,7 +15,7 @@ void test_create_node() {
     assert(node->adj_list != NULL);
     
     clear_node(node);
-    printf(" Node creation test passed\n");
+    printf("SUCCESS - Node creation test passed\n");
 }
 
 // Test graph creation
@@ -29,7 +29,7 @@ void test_create_graph() {
     assert(graph->nodes != NULL);
     
     destroy(graph);
-    printf(" Graph creation test passed\n");
+    printf("SUCCESS - Graph creation test passed\n");
 }
 
 // Test adding nodes to graph
@@ -49,7 +49,7 @@ void test_add_node_to_graph() {
     assert(graph->nodes[1] == node2);
     
     destroy(graph);
-    printf(" Add node to graph test passed\n");
+    printf("SUCCESS - Add node to graph test passed\n");
 }
 
 // Test edge creation
@@ -69,7 +69,7 @@ void test_add_edge() {
     
     clear_node(node1);
     clear_node(node2);
-    printf(" Edge creation test passed\n");
+    printf("SUCCESS - Edge creation test passed\n");
 }
 
 // Test duplicate edge prevention
@@ -88,7 +88,7 @@ void test_duplicate_edge() {
     
     clear_node(node1);
     clear_node(node2);
-    printf(" Duplicate edge prevention test passed\n");
+    printf("SUCCESS - Duplicate edge prevention test passed\n");
 }
 
 // Test self-loop prevention
@@ -102,7 +102,7 @@ void test_self_loop() {
     assert(node->num_connected == 0);
     
     clear_node(node);
-    printf(" Self-loop prevention test passed\n");
+    printf("SUCCESS - Self-loop prevention test passed\n");
 }
 
 // Test check_visited function
@@ -124,7 +124,7 @@ void test_check_visited() {
     clear_node(node1);
     clear_node(node2);
     clear_node(node3);
-    printf(" Check visited test passed\n");
+    printf("SUCCESS - Check visited test passed\n");
 }
 
 // Test remove edge
@@ -151,7 +151,7 @@ void test_remove_edge() {
     clear_node(node1);
     clear_node(node2);
     clear_node(node3);
-    printf(" Edge removal test passed\n");
+    printf("SUCCESS - Edge removal test passed\n");
 }
 
 // Test complete graph scenario
@@ -178,7 +178,7 @@ void test_complete_graph() {
     assert(nodes[1]->num_connected == 2);  // Connected to 1 and 3
     
     destroy(graph);
-    printf(" Complete graph scenario test passed\n");
+    printf("SUCCESS - Complete graph scenario test passed\n");
 }
 
 // Test graph traversal (basic connectivity test)
@@ -202,7 +202,7 @@ void test_graph_traversal() {
     printf("\n");
     
     destroy(graph);
-    printf(" Graph traversal test completed\n");
+    printf("SUCCESS - Graph traversal test completed\n");
 }
 
 int main() {
@@ -221,7 +221,7 @@ int main() {
     test_graph_traversal_bfs();
     test_dfs_vs_bfs_comparison();
     
-    printf("\n<� All tests passed!\n");
+    printf("\nSUCCESS - All tests passed!\n");
     return 0;
 }
 
@@ -260,7 +260,7 @@ void test_graph_traversal_bfs() {
     printf("\n");
     
     destroy(graph);
-    printf(" BFS traversal test completed\n");
+    printf("SUCCESS - BFS traversal test completed\n");
 }
 
 // Test comparing DFS vs BFS on same graph
@@ -292,5 +292,5 @@ void test_dfs_vs_bfs_comparison() {
     printf("\n");
     
     destroy(graph);
-    printf(" DFS vs BFS comparison test completed\n");
+    printf("SUCCESS - DFS vs BFS comparison test completed\n");
 }
