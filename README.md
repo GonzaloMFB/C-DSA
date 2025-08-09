@@ -91,8 +91,7 @@ Each implementation includes comprehensive test cases demonstrating:
 
 This is a learning repository. Feel free to:
 - Suggest improvements
-- Add new data structures or algorithms
-- Enhance documentation
+- Suggest new data structures or algorithms
 - Report bugs or issues
 
 ## License
